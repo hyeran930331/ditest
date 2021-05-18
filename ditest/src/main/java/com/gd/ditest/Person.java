@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Person {
 	@Autowired
-	ICar c;
+	ICar c; //객체와 객체간의 연결은 인터페이스로 ICar
 	public void drive() {
 		//car이라는 클래스가 없다면 실행되지 않아서 = 의존성이 높다.
 		//그래서 Car이 없더라도 에러가 안나도록
